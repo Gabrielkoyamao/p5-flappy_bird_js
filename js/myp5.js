@@ -2,7 +2,7 @@ var bird;
 var pipes = [];
 
 function setup(){
-    createCanvas(500,500);
+    create
     bird = new Bird();
     pipes.push(new Pipe());
 }
@@ -25,7 +25,6 @@ function draw(){
             console.log('hit')
         }
     }
-    
 }
 
 function keyPressed(){
@@ -67,7 +66,6 @@ function Bird(){
             this.velocity = 0;
         }
     }
-
 }
 
 function Pipe(){
@@ -102,5 +100,4 @@ function Pipe(){
     this.update = function(){
         this.x  -= this.speed;
     }
-
 }
